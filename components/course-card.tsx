@@ -21,12 +21,12 @@ export function CourseCard({ id, title, description, lessons, students, duration
   return (
     <div className="group relative rounded-lg border border-border bg-card overflow-hidden hover:shadow-lg transition-all duration-300 hover:border-primary/50">
       {/* Course image */}
-      <div className="relative h-40 bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden">
+      <div className="relative h-40 bg-linear-to-br from-primary/20 to-accent/20 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
           <BookOpen className="text-primary/40 opacity-0 group-hover:opacity-100 transition-opacity" size={48} />
         </div>
         {image && <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
       {/* Content */}
@@ -58,7 +58,7 @@ export function CourseCard({ id, title, description, lessons, students, duration
           </div>
           <div className="h-2 bg-muted rounded-full overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-500"
+              className="h-full bg-linear-to-r from-primary to-accent transition-all duration-500"
               style={{ width: `${progress}%` }}
             />
           </div>
