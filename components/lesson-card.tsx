@@ -40,7 +40,7 @@ export function LessonCard({
     >
       <div className="flex items-start gap-3">
         {/* Drag handle */}
-        <button className="p-1 text-muted-foreground hover:text-foreground transition-colors flex-shrink-0">
+        <button className="p-1 text-muted-foreground hover:text-foreground transition-colors shrink-0">
           <GripIcon size={18} />
         </button>
 
