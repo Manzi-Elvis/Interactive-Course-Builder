@@ -155,7 +155,7 @@ export function QuizEditorModal({ isOpen, question, onClose, onSave }: QuizEdito
                   <div key={option.id} className="flex items-center gap-2">
                     <button
                       onClick={() => handleToggleCorrect(option.id)}
-                      className={`flex-shrink-0 w-5 h-5 rounded border-2 transition-all ${
+                      className={`shrink-0 w-5 h-5 rounded border-2 transition-all ${
                         option.isCorrect ? "bg-green-500 border-green-600" : "border-border hover:border-green-500"
                       }`}
                     />
