@@ -17,7 +17,7 @@ function SettingsSection({ title, description, icon, children }: SettingsSection
   return (
     <div className="rounded-lg border border-border bg-card p-6 space-y-4">
       <div className="flex items-start gap-3">
-        <div className="p-2 rounded-lg bg-primary/10 text-primary flex-shrink-0">{icon}</div>
+        <div className="p-2 rounded-lg bg-primary/10 text-primary shrink-0">{icon}</div>
         <div className="flex-1">
           <h3 className="font-semibold text-foreground">{title}</h3>
           <p className="text-sm text-muted-foreground mt-1">{description}</p>
