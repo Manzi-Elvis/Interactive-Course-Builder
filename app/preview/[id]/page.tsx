@@ -62,7 +62,7 @@ export default function LessonPreview() {
         {/* Video player */}
         <div className="flex-1 space-y-4">
           <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-black">
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/20 to-accent/20">
+            <div className="absolute inset-0 flex items-center justify-center bg-linear-to-br from-primary/20 to-accent/20">
               <button
                 onClick={() => setIsPlaying(!isPlaying)}
                 className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-all"
@@ -72,10 +72,10 @@ export default function LessonPreview() {
             </div>
 
             {/* Video controls */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 space-y-2">
+            <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black to-transparent p-4 space-y-2">
               {/* Progress bar */}
               <div className="w-full h-1 bg-white/20 rounded-full overflow-hidden cursor-pointer hover:h-2 transition-all">
-                <div className="h-full bg-gradient-to-r from-primary to-accent" style={{ width: `${progress}%` }} />
+                <div className="h-full bg-linear-to-r from-primary to-accent" style={{ width: `${progress}%` }} />
               </div>
 
               {/* Controls */}
