@@ -60,7 +60,7 @@ export function Topbar() {
             <p className="text-sm font-medium text-foreground">Alex Johnson</p>
             <p className="text-xs text-muted-foreground">Instructor</p>
           </div>
-          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center flex-shrink-0 text-primary-foreground">
+          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center shrink-0 text-primary-foreground">
             <UserIcon size={20} />
           </div>
         </div>
